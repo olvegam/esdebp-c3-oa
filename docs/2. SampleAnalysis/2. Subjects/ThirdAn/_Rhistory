@@ -1,0 +1,509 @@
+<<<<<<< HEAD
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-AoV-numCA.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-AoV-numCA.R', echo=TRUE)
+install.packages("ggplot2")
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-AoV-numCA.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-AoV-numCA.R', echo=TRUE)
+?wilcox.test
+wilcox.test(dataFMSGB$nCA, dataFMSGBU$nCA)
+wilcox.test(datosFMSGB$nCA, datosFMSGBU$nCA)
+wilcox.test(datosMSGB$nCA, datosMSGBU$nCA)
+wilcox.test(datosMSGB$numCA, datosMSGBU$numCA)
+wilcox.test(datosMSGB$numCA, datosMSGUC$numCA)
+MWPS-B-BU = wilcox.test(datosPSB$numCA, datosPSBU$numCA)
+MWPS-BU-UC = wilcox.test(datosPSBU$numCA, datosPSUC$numCA)
+MWPS-B-UC = wilcox.test(datosPSB$numCA, datosPSUC$numCA)
+MWMSG_B_BU = wilcox.test(datosMSGB$numCA, datosMSGBU$numCA)
+MWMSG_B_BU
+MWMSG-B-UC = wilcox.test(datosMSGB$numCA, datosMSGUC$numCA, paired = TRUE)
+MWMSG_B_UC = wilcox.test(datosMSGB$numCA, datosMSGUC$numCA, paired = TRUE)
+MWMSG_B_UC
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+MWMSGBBU
+#Man Whitney for MSG con paired = TRUE
+wilcox.test(datosMSGB$numCA, datosMSGBU$numCA, paired = TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+warnings()
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+# Title
+cat("Statistical data for number of correct answers", file = "nCAsc4y5-S-SW-MannW.doc")
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# Case study identification
+cat("MSG Foundation CASE STUDY STATISTICAL ANALYSIS\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# Artifacts Set for case study identification
+cat("MSG-B statistical analysis\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# -------   KS test for MSG-B case study. --------------------------------------------#
+# export KS test output for MSG-B
+cat("KS test for MSG-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsMSGB , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# -------   SW test for MSG-B case study. --------------------------------------------#
+cat("SW test for MSG-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwMSGB , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# --------  Summary of MSG-B distribution -------------------------------------------#
+cat("Summary MSG-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryMSGB, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export KS test output for MSG-BU
+cat("KS test for MSG-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsMSGBU , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export SW test output for MSG-BU
+cat("SW test for MSG-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwMSGBU , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary FMSG output
+cat("Summary MSG-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryMSGBU, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export KS test output for MSG-UC
+cat("KS test for MSG-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsMSGUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export SW test output for MSG-UC
+cat("SW test for MSG-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwMSGUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary FMSG output
+cat("Summary MSG-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryMSGUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export anova test FMSG output
+#cat("Anova Test FMSG\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+#capture.output(FileSummaryAoVFMSG, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+#cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# -------   Mann Whitney U test to pdf file output - MSG case study-------------------------#
+# ------------------------------------------------------------------------------------------#
+# export Mann Whitney U test output for MSG-B
+cat("Man Whitney U test for MSG-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(MWMSGBBU, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export Mann Whitney U test output for MSG-B
+cat("Man Whitney U test for MSG-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(MWMSGBUUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export Mann Whitney U test output for MSG-B
+cat("Man Whitney U test for MSG-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(MWMSGBUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# Case study identification
+cat("Point of Sale CASE STUDY STATISTICAL ANALYSIS\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# Artifacts set - Case study identification
+cat("PS-B statistical analysis\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# export KS test output for PdV-B
+cat("KS test for PS-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsPSB, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export SW test output for PdV-B
+cat("SW test for PS-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwPSB, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary PdV output
+cat("Summary PS-BV\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryPdVB, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# Artifacts Set for case study identification
+cat("MSG-BU statistical analysis\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# export KS test output for PdV-BU
+cat("KS test for PS-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsPSBU , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export SW test output for PdV-BU
+cat("SW test for PS-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwPSBU , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary for PS-BU
+cat("Summary PS-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryPdVBU, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# Artifacts Set for case study identification
+cat("MSG-UC statistical analysis\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# export KS test output for PS-UC
+cat("KS test for PS-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsPSUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# export SW test output for PS-UC
+cat("SW test for PS-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwPSUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary PdV output
+cat("Summary PS-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryPdVUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export anova test PdV output
+cat("Anova Test PdV\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryAoVPdV, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# ------------------------------------------------------------------------------------------#
+# -------   Mann Whitney U test to pdf file output - PS case study--------------------------#
+# ------------------------------------------------------------------------------------------#
+# export Mann Whitney U test output for PS-B
+cat("Man Whitney U test for PS-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(MWPSBBU, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export Mann Whitney U test output for PS-BU
+cat("Man Whitney U test for PS-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(MWPSBUUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export Mann Whitney U test output for PS-UC
+cat("Man Whitney U test for PS-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(MWPSBUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# -------------------------------------------------------------------------------------#
+# Case study identification
+cat("BOTH CASE STUDIES STATISTICAL ANALYSIS\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# -------   KS test for Both case studies. --------------------------------------------#
+# export KS test output for Both-B
+cat("KS test for Both-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsBothB , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export SW test output for Both-B
+cat("SW test for Both-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwBothB , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary Both output
+cat("Summary Both-B\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryBothB, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export KS test output for Both-BU
+cat("KS test for Both-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsBothBU, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export SW test output for Both-BU
+cat("SW test for Both-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwBothBU, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary Both output
+cat("Summary Both-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryBothBU, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export KS test output for Both-UC
+cat("KS test for Both-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(KsBothUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export SW test output for Both-UC
+cat("SW test for Both-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwBothUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export summary Both output
+cat("Summary Both-UC\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryBothUC, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# export anova test TwoCS output
+cat("Anova Test Both\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(FileSummaryAovTwoCS, file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+?pairwise.wilcox.test
+?pairwise.wilcox.test
+pairwise.wilcox.rating.test(datosMSGB$numCA, datosMSGUC$numCA, p.adjust.method = "fdr", paired = FALSE)
+pairwise.wilcox.test(datosMSGB$numCA, datosMSGUC$numCA, p.adjust.method = "fdr", paired = FALSE)
+pairwise.t.test(datosMSGB$numCA, Month, p.adj = "bonf")
+pairwise.t.test(datosMSGB$numCA, datosMSGUC, p.adj = "bonf")
+pairwise.t.test(datosMSGB$numCA, datosMSGUC$numCA, p.adj = "bonf")
+pairwise.wilcox.test(datosMSGB$numCA, datosMSGUC$numCA, p.adjust.method = "bonf", paired = FALSE)
+?pairwise.wilcox.test
+pairwise.wilcox.test(datosMSGB$numCA, datosMSGUC$numCA)
+View(datosTwoCS)
+View(datosTwoCS)
+View(datosBothBU)
+View(datosBothB)
+View(datosBothB)
+View(datosBothBU)
+View(datosBothUC)
+View(datosTwoCS)
+View(datosTwoCS)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+View(datosTwoCS)
+View(datosTwoCS)
+getwd()
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-MannW-Subj.R', echo=TRUE)
+setwd(/Users/olga/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn)
+setwd(~/Users/olga/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn)
+setwd("~/Users/olga/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn")
+getwd
+getwd()
+getwd("/Users/olga/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn")
+getwd("/Users/olga/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn")
+setwd("/Users/olga/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn")
+setwd("~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn")
+setwd("~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5")
+getwd()
+setwd("~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn")
+getwd
+getwd()
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-MannW-Subj.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-MannW-Subj.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-MannW-Subj.R', echo=TRUE)
+cat("Shapiro Wilk tests \n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+#cat("SW test for MSG-BU\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwMSGBU , file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nCAsc4y5-S-SW-MannW.doc", append = TRUE)
+capture.output(SwMSGB , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwMSGBU , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwMSGUC , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwPSB , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwPSBU , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwPSUC , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwBothB , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwBothBU , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwBothUC , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+View(datosMSGB)
+View(datosMSGB)
+SwMSGB<- shapiro.test(datosMSGB$Subjects)
+# MSG-BU
+SwMSGBU<- shapiro.test(datosMSGBU$Subjects)
+# MSG-UC
+SwMSGUC<- shapiro.test(datosMSGUC$Subjects)
+# PS-B
+SwPSB<- shapiro.test(datosPSB$Subjects)
+# PS-BU
+SwPSBU<- shapiro.test(datosPSBU$Subjects)
+# PS-UC
+SwPSUC<- shapiro.test(datosPSUC$Subjects)
+# Both-B
+SwBothB<- shapiro.test(datosBothB$Subjects)
+# Both-BU
+SwBothBU<- shapiro.test(datosBothBU$Subjects)
+# Both-UC
+SwBothUC<- shapiro.test(datosBothUC$Subjects)
+Both.aov <- aov(Subjects ~ ArtifactsSet, data = datosBoth)
+# Summary of the analysis
+FileSummaryAovBoth = summary(Both.aov)
+# export anova test Both output
+cat("Anova Test Both\n", file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(FileSummaryAovBoth, file = "nSubj-S-KS-AoV.doc", append = TRUE)
+# add 2 newlines
+cat("\n\n", file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwMSGB , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwMSGBU , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwMSGUC , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwPSB , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwPSBU , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwPSUC , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwBothB , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwBothBU , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+capture.output(SwBothUC , file = "nSubj-S-KS-AoV.doc", append = TRUE)
+plot(datosBoth)
+plot(datosBoth$ArtifactsSet, datosBoth$Subjects)
+?plot
+plot(datosBoth$ArtifactsSet, datosBoth$Subjects, "h")
+plot(x <- sort(rnorm(47)), type = "s", main = "plot(x, type = \"s\")")
+points(x, cex = .5, col = "dark red")
+?rplot
+?plot.default()
+rplot.default(datosBoth$ArtifactsSet, datosBoth$Subjects, "h")
+plot.default(datosBoth$ArtifactsSet, datosBoth$Subjects, "h")
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-MannW-Subj.R', echo=TRUE)
+plot.default(datosBoth$ArtifactsSet, datosBoth$Subjects, "h")
+levels(datosBoth$ArtifactsSet)
+with(datosBoth, {plot(ArtifactsSet,Subjects, type="b")})
+print(bMSG)
+bMSG
+ggplot
+pdf("datosMSGB-plot.pdf")
+bPlot = plot(datosBoth$ArtifactsSet, datosBoth$Subjects, "h")
+print(bBoth)
+dev.off()
+pdf("datosMSGB-plot.pdf")
+bPlot = plot(datosBoth$ArtifactsSet, datosBoth$Subjects, "p")
+print(bBoth)
+dev.off()
+pdf("datosMSGB-plot.pdf")
+bPlot = plot(datosBoth$ArtifactsSet, datosBoth$Subjects, "p")
+print(bPlot)
+dev.off()
+pdf("datosMSGB-plot.pdf")
+bPlot = plot(datosBoth$ArtifactsSet, datosBoth$Subjects, "l")
+print(bPlot)
+dev.off()
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-MannW-Subj.R', echo=TRUE)
+=======
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score/CR-BP-S-AoV-KS-Score.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+bMSG = ggplot(datosMSG, aes(ArtifactsSet,Time)) + geom_boxplot(outlier.shape = 19, width = 0.3) +
+#  ggtitle ("Time Response of correct answers -  by case study (P=PS, F=FMSG)") +
+labs(x = "Artifacts set", y= "Tiempo de Respuesta") +
+theme (plot.title = element_text(vjust=2, hjust=0.5, lineheight=1.5, size = 20))  +
+theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=rel(1.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(axis.text.x = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(axis.text.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+#  theme(panel.grid.minor.y = element_line(colour = "grey50"))
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq2-m4-msg.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bMSG)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq2-m4-msg.png", width = 1800, height = 1200, units = "px",
+res = 200)
+print(bMSG)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq2-m4-msg.pdf")
+print(bMSG)
+dev.off()
+#Dibuje el boxplot de PS. (Diagrama de cajas)
+bPS = ggplot(datosPS, aes(ArtifactsSet,Time)) + geom_boxplot(outlier.shape = 19, width = 0.3) +
+#  ggtitle ("Case study point of sale") +
+labs(x = "Artifacts set", y= "Time") +
+theme (plot.title = element_text(vjust=2, hjust=0.5, lineheight=1.5, size = 20))  +
+theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=rel(1.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(axis.text.x = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(axis.text.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#  theme(panel.grid.minor.y = element_line(colour = "grey50"))
+stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq2-m4-ps.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bPS)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq2-m4-ps.png", width = 1800, height = 1200, units = "px",
+res = 200)
+print(bPS)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq2-m4-ps.pdf")
+print(bPS)
+dev.off()
+#Dibuje el boxplot de ambos casos de estudio. (Diagrama de cajas)
+bBoth = ggplot(datosBoth, aes(ArtifactsSet,Time)) + geom_boxplot(outlier.shape = 19, width = 0.3)+
+#  ggtitle ("Time Response of correct answers - All case studies") +
+labs(x = "Artifacts set", y= "Tiempo de Respuesta") +
+theme (plot.title = element_text(vjust=2, hjust=0.5, lineheight=1.5, size = 20))  +
+theme(axis.title.x = element_text(face="bold", vjust=-0.5, size=rel(1.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(axis.text.x = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(axis.text.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#  theme(panel.grid.minor.y = element_line(colour = "grey50"))
+stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq2-m4-both.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bBoth)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq2-m4-both.png", width = 1800, height = 1200, units = "px",
+res = 200)
+print(bBoth)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq2-m4-both.pdf")
+print(bBoth)
+dev.off()
+cat("MSG-B", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryMSGB, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("MSG-BU", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryMSGBU, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("MSG-UC", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryMSGUC, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("PS-B", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryPSB, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("PS-BU", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryPSBU, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("PS-UC", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryPSUC, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("Both-B", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryBothB, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("Both-BU", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryBothBU, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("Both-UC", file = "time-S-SW-AoV.doc")
+capture.output(FileSummaryBothUC, file = "time-S-SW-AoV.doc", append = TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+cat("MSG-B", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryMSGB, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("MSG-BU", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryMSGBU, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("MSG-UC", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryMSGUC, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("PS-B", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryPSB, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("PS-BU", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryPSBU, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("PS-UC", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryPSUC, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("Both-B", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryBothB, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("Both-BU", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryBothBU, file = "time-S-SW-AoV.doc", append = TRUE)
+cat("Both-UC", file = "time-S-SW-AoV.doc", append = TRUE)
+capture.output(FileSummaryBothUC, file = "time-S-SW-AoV.doc", append = TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-AnoVA-MannW-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-AnoVA-MannW-Subj.R', echo=TRUE)
+>>>>>>> ae711483b6831d3a1354e111c88fe1abce632b8e

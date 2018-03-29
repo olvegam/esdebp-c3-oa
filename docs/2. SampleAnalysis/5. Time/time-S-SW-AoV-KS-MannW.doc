@@ -1,0 +1,282 @@
+statistical analysis for response time of correct answers (Score = 4y5)MSG-B ArtifactsSet            Time        
+ Length:117         Min.   :  4.902  
+ Class :character   1st Qu.: 50.852  
+ Mode  :character   Median : 99.210  
+                    Mean   :142.347  
+                    3rd Qu.:180.307  
+                    Max.   :698.264  
+MSG-BU ArtifactsSet            Time        
+ Length:114         Min.   :  0.397  
+ Class :character   1st Qu.: 42.051  
+ Mode  :character   Median : 81.694  
+                    Mean   :114.245  
+                    3rd Qu.:131.148  
+                    Max.   :665.128  
+MSG-UC ArtifactsSet            Time       
+ Length:104         Min.   : 10.48  
+ Class :character   1st Qu.: 55.05  
+ Mode  :character   Median : 99.39  
+                    Mean   :160.01  
+                    3rd Qu.:186.59  
+                    Max.   :947.12  
+PS-B ArtifactsSet            Time        
+ Length:137         Min.   :  7.115  
+ Class :character   1st Qu.: 43.139  
+ Mode  :character   Median : 84.650  
+                    Mean   :101.066  
+                    3rd Qu.:138.404  
+                    Max.   :437.277  
+PS-BU ArtifactsSet            Time       
+ Length:132         Min.   : 16.18  
+ Class :character   1st Qu.: 73.23  
+ Mode  :character   Median :123.59  
+                    Mean   :138.27  
+                    3rd Qu.:177.08  
+                    Max.   :414.05  
+PS-UC ArtifactsSet            Time       
+ Length:122         Min.   : 13.67  
+ Class :character   1st Qu.: 72.08  
+ Mode  :character   Median :128.28  
+                    Mean   :153.24  
+                    3rd Qu.:195.59  
+                    Max.   :609.75  
+Both-B ArtifactsSet            Time        
+ Length:254         Min.   :  4.902  
+ Class :character   1st Qu.: 45.059  
+ Mode  :character   Median : 88.986  
+                    Mean   :120.081  
+                    3rd Qu.:150.952  
+                    Max.   :698.264  
+Both-BU ArtifactsSet            Time        
+ Length:246         Min.   :  0.397  
+ Class :character   1st Qu.: 56.298  
+ Mode  :character   Median :101.058  
+                    Mean   :127.137  
+                    3rd Qu.:162.280  
+                    Max.   :665.128  
+Both-UC ArtifactsSet            Time       
+ Length:226         Min.   : 10.48  
+ Class :character   1st Qu.: 68.24  
+ Mode  :character   Median :115.22  
+                    Mean   :156.35  
+                    3rd Qu.:193.35  
+                    Max.   :947.12  
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGB$Time
+W = 0.75311, p-value = 9.619e-13
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGBU$Time
+W = 0.7937, p-value = 2.355e-11
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGUC$Time
+W = 0.70398, p-value = 3.522e-13
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSB$Time
+W = 0.86044, p-value = 4.847e-10
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSBU$Time
+W = 0.90608, p-value = 1.381e-07
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSUC$Time
+W = 0.84044, p-value = 3.726e-10
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothB$Time
+W = 0.75313, p-value < 2.2e-16
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothBU$Time
+W = 0.8647, p-value = 6.466e-14
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothUC$Time
+W = 0.74676, p-value < 2.2e-16
+
+Anova Test MSG
+              Df  Sum Sq Mean Sq F value Pr(>F)  
+ArtifactsSet   2  116899   58449   2.697 0.0689 .
+Residuals    332 7196351   21676                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova Test PS
+              Df  Sum Sq Mean Sq F value  Pr(>F)    
+ArtifactsSet   2  189604   94802   11.18 1.9e-05 ***
+Residuals    388 3289231    8477                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova Test Both
+              Df   Sum Sq Mean Sq F value  Pr(>F)   
+ArtifactsSet   2   173696   86848   5.906 0.00286 **
+Residuals    723 10631003   14704                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGB$Time
+D = 0.63631, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGBU$Time
+D = 0.85881, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGUC$Time
+D = 0.40491, p-value = 3.109e-15
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSB$Time
+D = 0.81932, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSBU$Time
+D = 0.68117, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSUC$Time
+D = 0.79505, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothB$Time
+D = 0.68504, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothBU$Time
+D = 0.91463, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothUC$Time
+D = 0.7079, p-value < 2.2e-16
+alternative hypothesis: two-sided
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$Time and datosMSGBU$Time
+W = 7509, p-value = 0.09829
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGBU$Time and datosMSGUC$Time
+W = 5051, p-value = 0.05952
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$Time and datosMSGUC$Time
+W = 5961, p-value = 0.7963
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$Time and datosPSBU$Time
+W = 6484, p-value = 6.088e-05
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSBU$Time and datosPSUC$Time
+W = 7502.5, p-value = 0.348
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$Time and datosPSUC$Time
+W = 5490, p-value = 1.904e-06
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$Time and datosBothBU$Time
+W = 28644, p-value = 0.1079
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothBU$Time and datosBothUC$Time
+W = 24880, p-value = 0.04878
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$Time and datosBothUC$Time
+W = 23445, p-value = 0.0005296
+alternative hypothesis: true location shift is not equal to 0
+
+PS-BU vs PS-B
+Cliff's Delta
+
+delta estimate: 0.282902 (small)
+95 percent confidence interval:
+      inf       sup 
+0.1484589 0.4070776 
+PS-UC vs PS-B
+Cliff's Delta
+
+delta estimate: 0.3430657 (medium)
+95 percent confidence interval:
+      inf       sup 
+0.2071591 0.4659815 
+Both-UC vs Both-B
+Cliff's Delta
+
+delta estimate: 0.183158 (small)
+95 percent confidence interval:
+       inf        sup 
+0.08022597 0.28222492 

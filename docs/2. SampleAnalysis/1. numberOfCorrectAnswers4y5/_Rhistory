@@ -1,0 +1,4 @@
+# Para Windows Bogot? - port?til
+setwd("D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5")
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)

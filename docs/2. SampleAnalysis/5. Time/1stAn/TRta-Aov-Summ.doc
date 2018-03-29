@@ -1,0 +1,16 @@
+Anova summaries response time of correct answers (Score = 5)
+
+Anova Test FandP
+              Df  Sum Sq Mean Sq F value  Pr(>F)   
+ArtifactsSet   5  229233   45847   3.362 0.00525 **
+Residuals    644 8782444   13637                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Anova Test TwoCS
+              Df  Sum Sq Mean Sq F value Pr(>F)  
+ArtifactsSet   2  110383   55191   4.012 0.0186 *
+Residuals    647 8901295   13758                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

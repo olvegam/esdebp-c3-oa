@@ -1,0 +1,131 @@
+abline(linModel, col = "red", lwd = 3)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+install.packages("effsize")
+#Dibuje el boxplot con datos de FMSG y PS (Diagrama de cajas)
+bMSG = ggplot(datosMSG, aes(ArtifactsSet,Time)) + geom_boxplot(outlier.shape = 19, width = 0.3) +
+labs(x = "Artifacts set", y= "Answering time") +
+theme (plot.title = element_text(vjust=2, hjust=0.5, lineheight=1.5, size = 20))  +
+theme(axis.title.x = element_text(face="bold", vjust=-1.5, size=rel(2))) +
+theme(axis.title.y = element_text(face="bold", vjust=1.5, size=rel(2.5))) +
+#  theme(axis.text.x = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+#  theme(axis.text.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+# theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"))
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+install.packages("effsize")
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+?element_text
+?hjust
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+install.packages("effsize")
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+?horizontal
+ggplot()
+?ggplot()
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+?legend.margin
+??legend.margin
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+pdf("rq2-m4-msg.pdf")
+print(bMSG)
+dev.off()
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+pdf("rq2-m4-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosMSG, aes(ArtifactsSet,Time)) +
+geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+scale_x_discrete(expand=c(0.5,0)) +
+labs(x = "Artifacts set", y= "Answering time") +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+png(filename = "rq2-m4-msg.png", width = 1800, height = 1200, units = "px",
+res = 200)
+print(bMSG)
+dev.off()
+pdf("rq2-m4-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosMSG, aes(ArtifactsSet,Time)) +
+geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+scale_x_discrete(expand=c(0.4,0)) +
+labs(x = "Artifacts set", y= "Answering time") +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+pdf("rq2-m4-msg.pdf")
+print(bMSG)
+dev.off()
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/1. nCA/numCAsc4y5/CR-BP-S-SW-MannW-numCA.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-AnoVA-MannW-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/2. Subjects/ThirdAn/CR-bp-S-SW-AnoVA-MannW-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score/CR-BP-S-AoV-KS-Score.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+pdf("rq1-m1-msg-radar.pdf")
+print(rMSG)
+dev.off()
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)
+pdf("rq1-m1-msg-radar.pdf")
+print(rMSG)
+dev.off()
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/4. Radar/Radar.R', echo=TRUE)

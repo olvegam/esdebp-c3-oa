@@ -1,0 +1,374 @@
+Statistical data for number of correct answers
+
+MSG Foundation CASE STUDY STATISTICAL ANALYSIS
+
+
+MSG-B statistical analysis
+
+
+KS test for MSG-B
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGB$numCA
+D = 0.49751, p-value = 0.0001003
+alternative hypothesis: two-sided
+
+
+
+SW test for MSG-B
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGB$numCA
+W = 0.91038, p-value = 0.06481
+
+
+
+Summary MSG-B
+ ArtifactsSet           numCA     
+ Length:20          Min.   :3.00  
+ Class :character   1st Qu.:4.75  
+ Mode  :character   Median :6.00  
+                    Mean   :5.80  
+                    3rd Qu.:7.00  
+                    Max.   :8.00  
+
+
+KS test for MSG-BU
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGBU$numCA
+D = 0.58319, p-value = 2.47e-06
+alternative hypothesis: two-sided
+
+
+
+SW test for MSG-BU
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGBU$numCA
+W = 0.97307, p-value = 0.818
+
+
+
+Summary MSG-BU
+ ArtifactsSet           numCA     
+ Length:20          Min.   :2.00  
+ Class :character   1st Qu.:4.00  
+ Mode  :character   Median :5.00  
+                    Mean   :5.40  
+                    3rd Qu.:6.25  
+                    Max.   :9.00  
+
+
+KS test for MSG-UC
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGUC$numCA
+D = 0.4068, p-value = 0.002668
+alternative hypothesis: two-sided
+
+
+
+SW test for MSG-UC
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGUC$numCA
+W = 0.93999, p-value = 0.2396
+
+
+
+Summary MSG-UC
+ ArtifactsSet           numCA    
+ Length:20          Min.   :2.0  
+ Class :character   1st Qu.:4.0  
+ Mode  :character   Median :5.0  
+                    Mean   :4.9  
+                    3rd Qu.:6.0  
+                    Max.   :9.0  
+
+
+Man Whitney U test for MSG-B
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$numCA and datosMSGBU$numCA
+W = 233, p-value = 0.3711
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Man Whitney U test for MSG-BU
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGBU$numCA and datosMSGUC$numCA
+W = 237.5, p-value = 0.3067
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Man Whitney U test for MSG-UC
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$numCA and datosMSGUC$numCA
+W = 271.5, p-value = 0.05078
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Point of Sale CASE STUDY STATISTICAL ANALYSIS
+
+
+PS-B statistical analysis
+
+
+KS test for PS-B
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSB$numCA
+D = 0.44134, p-value = 0.0008265
+alternative hypothesis: two-sided
+
+
+
+SW test for PS-B
+
+	Shapiro-Wilk normality test
+
+data:  datosPSB$numCA
+W = 0.95966, p-value = 0.537
+
+
+
+Summary PS-BV
+ ArtifactsSet           numCA      
+ Length:20          Min.   : 3.00  
+ Class :character   1st Qu.: 5.00  
+ Mode  :character   Median : 6.00  
+                    Mean   : 6.15  
+                    3rd Qu.: 7.25  
+                    Max.   :10.00  
+
+
+MSG-BU statistical analysis
+
+
+KS test for PS-BU
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSBU$numCA
+D = 0.73319, p-value = 9.172e-10
+alternative hypothesis: two-sided
+
+
+
+SW test for PS-BU
+
+	Shapiro-Wilk normality test
+
+data:  datosPSBU$numCA
+W = 0.88847, p-value = 0.02521
+
+
+
+Summary PS-BU
+ ArtifactsSet           numCA     
+ Length:20          Min.   :1.00  
+ Class :character   1st Qu.:5.00  
+ Mode  :character   Median :6.00  
+                    Mean   :6.10  
+                    3rd Qu.:7.25  
+                    Max.   :9.00  
+
+
+MSG-UC statistical analysis
+
+
+KS test for PS-UC
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSUC$numCA
+D = 0.45, p-value = 0.0006071
+alternative hypothesis: two-sided
+
+
+
+SW test for PS-UC
+
+	Shapiro-Wilk normality test
+
+data:  datosPSUC$numCA
+W = 0.92059, p-value = 0.1017
+
+
+
+Summary PS-UC
+ ArtifactsSet           numCA     
+ Length:20          Min.   :3.00  
+ Class :character   1st Qu.:4.75  
+ Mode  :character   Median :5.50  
+                    Mean   :5.70  
+                    3rd Qu.:7.00  
+                    Max.   :8.00  
+
+
+Man Whitney U test for PS-B
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$numCA and datosPSBU$numCA
+W = 187, p-value = 0.7306
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Man Whitney U test for PS-BU
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSBU$numCA and datosPSUC$numCA
+W = 237, p-value = 0.3152
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Man Whitney U test for PS-UC
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$numCA and datosPSUC$numCA
+W = 227, p-value = 0.4658
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+BOTH CASE STUDIES STATISTICAL ANALYSIS
+
+
+KS test for Both-B
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothB$numCA
+D = 0.50556, p-value = 2.636e-09
+alternative hypothesis: two-sided
+
+
+
+SW test for Both-B
+
+	Shapiro-Wilk normality test
+
+data:  datosBothB$numCA
+W = 0.95323, p-value = 0.09796
+
+
+
+Summary Both-B
+ ArtifactsSet           numCA       
+ Length:40          Min.   : 3.000  
+ Class :character   1st Qu.: 5.000  
+ Mode  :character   Median : 6.000  
+                    Mean   : 5.975  
+                    3rd Qu.: 7.000  
+                    Max.   :10.000  
+
+
+KS test for Both-BU
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothBU$numCA
+D = 0.66634, p-value = 7.772e-16
+alternative hypothesis: two-sided
+
+
+
+SW test for Both-BU
+
+	Shapiro-Wilk normality test
+
+data:  datosBothBU$numCA
+W = 0.95355, p-value = 0.1005
+
+
+
+Summary Both-BU
+ ArtifactsSet           numCA     
+ Length:40          Min.   :1.00  
+ Class :character   1st Qu.:5.00  
+ Mode  :character   Median :6.00  
+                    Mean   :5.75  
+                    3rd Qu.:7.00  
+                    Max.   :9.00  
+
+
+KS test for Both-UC
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothUC$numCA
+D = 0.48319, p-value = 1.546e-08
+alternative hypothesis: two-sided
+
+
+
+SW test for Both-UC
+
+	Shapiro-Wilk normality test
+
+data:  datosBothUC$numCA
+W = 0.95913, p-value = 0.1564
+
+
+
+Summary Both-UC
+ ArtifactsSet           numCA     
+ Length:40          Min.   :2.00  
+ Class :character   1st Qu.:4.00  
+ Mode  :character   Median :5.00  
+                    Mean   :5.30  
+                    3rd Qu.:6.25  
+                    Max.   :9.00  
+
+
+Man Whitney U test for Both-BvsBU
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$numCA and datosBothBU$numCA
+W = 840, p-value = 0.6993
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Man Whitney U test for Both-BUvsUC
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothBU$numCA and datosBothUC$numCA
+W = 947, p-value = 0.1521
+alternative hypothesis: true location shift is not equal to 0
+
+
+
+Man Whitney U test for Both-BvsUC
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$numCA and datosBothUC$numCA
+W = 988.5, p-value = 0.06613
+alternative hypothesis: true location shift is not equal to 0
+
+
+

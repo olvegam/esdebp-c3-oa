@@ -1,0 +1,363 @@
+%!
+/font1 {/Times-Roman findfont 10 scalefont setfont} bind def
+/font2 {/Times-Roman findfont 16 scalefont setfont} bind def
+/font3 {/Times-Roman findfont 25 scalefont setfont} bind def
+/font4 {/Times-Roman findfont 38 scalefont setfont} bind def
+
+/m /moveto load def
+/l /lineto load def
+/S /stroke load def
+/w /setlinewidth load def
+
+/s /show load def
+/sc {dup stringwidth pop 2 div neg 0 rmoveto s} bind def
+/sr {dup stringwidth pop  neg 0 rmoveto s} bind def
+/syc {gsave currentpoint translate 90 rotate dup stringwidth pop 2 div neg 0 rmoveto s grestore} bind def
+
+/triup {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath fill} bind def
+/tridwn {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath fill} bind def
+/box  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath fill} bind def
+/diamnd {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath fill} bind def
+
+/cbezier  .55228475 def
+/cbezier1 .44771525 def
+/carcx { /dy exch radius mul def /dx exch radius mul def currentpoint exch dx cbezier mul add exch 
+currentpoint dy cbezier1 mul add exch dx add exch
+currentpoint dy  add exch dx add exch curveto} bind def
+/carcy { /dy exch radius mul def /dx exch radius mul def currentpoint dy cbezier mul add 
+currentpoint dy add exch dx cbezier1 mul add exch
+currentpoint dy add exch dx add exch curveto} bind def
+/circle {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath fill} bind def
+
+/dot {gsave 1 setlinewidth -.5 0 rmoveto 1 0 rlineto stroke grestore} bind def
+
+/triuS {/base exch def 0 base rmoveto base neg base 2 mul neg rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/tridwS {/base exch def 0 base neg rmoveto base neg base 2 mul rlineto base 2 mul 0 rlineto closepath stroke} bind def
+/boS  {/side exch 2 mul def side 2 div neg side 2 div neg rmoveto side 0 rlineto 0 side rlineto side neg 0 rlineto closepath stroke} bind def
+/diamnS {/side exch def 0 side neg rmoveto side side rlineto side neg side rlineto side neg side neg rlineto closepath stroke} bind def
+/circlS {/radius exch def 0 radius neg rmoveto 1 1 carcx -1 1 carcy -1 -1 carcx 1 -1 carcy closepath stroke} bind def
+
+/horiF { 12 exch 600
+{dup 12 exch moveto 780 exch lineto} for
+stroke } bind def
+
+/vertF { 12 exch 780
+{dup 12 moveto 600 lineto} for
+stroke } bind def
+
+/fallF { 12 exch 1380
+{dup 12 moveto 588 sub 600 lineto} for
+stroke } bind def
+
+/riseF { -588 exch 780
+{dup 12 moveto 588 add 600 lineto} for
+stroke } bind def
+
+/crhvF { dup horiF vertF } bind def
+
+/crhsF { dup fallF riseF } bind def
+
+90 rotate 0 -612 translate
+font2
+ % start of actual plot
+182.0  82.0 m
+(A) sc 
+252.8  82.0 m
+(B) sc 
+323.7  82.0 m
+(C) sc 
+394.5  82.0 m
+(D) sc 
+465.3  82.0 m
+(E) sc 
+536.2  82.0 m
+(F) sc 
+137.7 503.4 m
+146.0 503.4 l
+S
+137.7 460.9 m
+148.8 460.9 l
+S
+127.7 454.6 m
+(800) sr 
+137.7 418.3 m
+146.0 418.3 l
+S
+137.7 375.8 m
+148.8 375.8 l
+S
+127.7 369.5 m
+(600) sr 
+137.7 333.2 m
+146.0 333.2 l
+S
+137.7 290.7 m
+148.8 290.7 l
+S
+127.7 284.4 m
+(400) sr 
+137.7 248.1 m
+146.0 248.1 l
+S
+137.7 205.6 m
+148.8 205.6 l
+S
+127.7 199.3 m
+(200) sr 
+137.7 163.0 m
+146.0 163.0 l
+S
+137.7 120.5 m
+148.8 120.5 l
+S
+127.7 114.2 m
+(0) sr 
+580.5 120.5 m
+569.4 120.5 l
+S
+580.5 163.0 m
+572.1 163.0 l
+S
+580.5 205.6 m
+569.4 205.6 l
+S
+580.5 248.1 m
+572.1 248.1 l
+S
+580.5 290.7 m
+569.4 290.7 l
+S
+580.5 333.2 m
+572.1 333.2 l
+S
+580.5 375.8 m
+569.4 375.8 l
+S
+580.5 418.3 m
+572.1 418.3 l
+S
+580.5 460.9 m
+569.4 460.9 l
+S
+580.5 503.4 m
+572.1 503.4 l
+S
+137.7 100.8 m
+580.5 100.8 l
+580.5 543.6 l
+137.7 543.6 l
+137.7 100.8 l
+S
+359.1 556.1 m
+(55F3) sc 
+359.1  63.2 m
+(X) sc 
+ 89.2 322.2 m
+(Y) syc
+155.4 139.3 m
+208.5 139.3 l
+208.5 194.4 l
+155.4 194.4 l
+155.4 139.3 l
+S
+182.0 194.4 m
+182.0 277.1 l
+S
+187.9 277.1 m
+176.1 277.1 l
+S
+182.0 139.3 m
+182.0 122.6 l
+S
+187.9 122.6 m
+176.1 122.6 l
+S
+155.4 156.7 m
+208.5 156.7 l
+S
+182.0 292.8 m
+  3.0 circlS
+182.0 294.9 m
+  3.0 circlS
+182.0 332.8 m
+  3.0 circlS
+182.0 373.7 m
+  3.0 circle
+182.0 377.5 m
+  3.0 circle
+182.0 404.3 m
+  3.0 circle
+182.0 415.4 m
+  3.0 circle
+182.0 417.5 m
+  3.0 circle
+226.2 137.7 m
+279.4 137.7 l
+279.4 173.0 l
+226.2 173.0 l
+226.2 137.7 l
+S
+252.8 173.0 m
+252.8 226.0 l
+S
+258.7 226.0 m
+246.9 226.0 l
+S
+252.8 137.7 m
+252.8 120.9 l
+S
+258.7 120.9 m
+246.9 120.9 l
+S
+226.2 154.3 m
+279.4 154.3 l
+S
+252.8 234.5 m
+  3.0 circlS
+252.8 235.8 m
+  3.0 circlS
+252.8 238.4 m
+  3.0 circlS
+252.8 241.3 m
+  3.0 circlS
+252.8 261.3 m
+  3.0 circlS
+252.8 270.3 m
+  3.0 circlS
+252.8 285.1 m
+  3.0 circle
+252.8 287.3 m
+  3.0 circle
+252.8 323.5 m
+  3.0 circle
+252.8 403.4 m
+  3.0 circle
+297.1 140.9 m
+350.2 140.9 l
+350.2 188.4 l
+297.1 188.4 l
+297.1 140.9 l
+S
+323.7 188.4 m
+323.7 259.5 l
+S
+329.6 259.5 m
+317.8 259.5 l
+S
+323.7 140.9 m
+323.7 124.8 l
+S
+329.6 124.8 m
+317.8 124.8 l
+S
+297.1 158.8 m
+350.2 158.8 l
+S
+323.7 273.2 m
+  3.0 circlS
+323.7 274.1 m
+  3.0 circlS
+323.7 281.7 m
+  3.0 circlS
+323.7 286.4 m
+  3.0 circlS
+323.7 350.7 m
+  3.0 circle
+323.7 360.5 m
+  3.0 circle
+323.7 387.3 m
+  3.0 circle
+323.7 505.1 m
+  3.0 circle
+323.7 523.4 m
+  3.0 circle
+367.9 138.6 m
+421.1 138.6 l
+421.1 180.6 l
+367.9 180.6 l
+367.9 138.6 l
+S
+394.5 180.6 m
+394.5 243.6 l
+S
+400.4 243.6 m
+388.6 243.6 l
+S
+394.5 138.6 m
+394.5 123.5 l
+S
+400.4 123.5 m
+388.6 123.5 l
+S
+367.9 156.9 m
+421.1 156.9 l
+S
+394.5 248.6 m
+  3.0 circlS
+394.5 251.1 m
+  3.0 circlS
+394.5 255.4 m
+  3.0 circlS
+394.5 280.9 m
+  3.0 circlS
+394.5 306.4 m
+  3.0 circlS
+438.8 152.3 m
+491.9 152.3 l
+491.9 195.7 l
+438.8 195.7 l
+438.8 152.3 l
+S
+465.3 195.7 m
+465.3 260.8 l
+S
+471.2 260.8 m
+459.4 260.8 l
+S
+465.3 152.3 m
+465.3 128.2 l
+S
+471.2 128.2 m
+459.4 128.2 l
+S
+438.8 173.0 m
+491.9 173.0 l
+S
+465.3 267.7 m
+  3.0 circlS
+465.3 277.9 m
+  3.0 circlS
+465.3 283.5 m
+  3.0 circlS
+465.3 293.7 m
+  3.0 circlS
+465.3 296.7 m
+  3.0 circlS
+509.6 150.9 m
+562.8 150.9 l
+562.8 204.3 l
+509.6 204.3 l
+509.6 150.9 l
+S
+536.2 204.3 m
+536.2 284.4 l
+S
+542.1 284.4 m
+530.3 284.4 l
+S
+536.2 150.9 m
+536.2 126.4 l
+S
+542.1 126.4 m
+530.3 126.4 l
+S
+509.6 179.6 m
+562.8 179.6 l
+S
+536.2 303.5 m
+  3.0 circlS
+536.2 332.8 m
+  3.0 circlS
+536.2 380.0 m
+  3.0 circle
+ showpage

@@ -1,0 +1,483 @@
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R')
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R')
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R')
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+View(datosFMSG)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+View(datosFMSG)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/Subjects/ThirdAn/CR-BP-AoV-KS-Subj.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score/CR-BP-S-AoV-KS-Score.R', echo=TRUE)
+getwd
+getwd()
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score/CR-BP-S-AoV-KS-Score.R', echo=TRUE)
+datosMSGBU
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score/CR-BP-S-AoV-KS-Score.R', echo=TRUE)
+datosMSGBU
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score/CR-BP-S-AoV-KS-Score.R', echo=TRUE)
+source('D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score/CR-BP-S-AoV-KS-Score.R', echo=TRUE)
+# Set path to Desktop
+# Para MAC
+#setwd("~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score")
+# Para Windows
+setwd("D:/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/3. Score")
+# Instalacion de paquetes y librerias
+#Para leer archivos de Excel
+#install.packages("tidyverse")
+# Leer el paquete para lectura de archivos de Excel.
+library("readxl")
+#Para utilizar ggplot y graficar los boxplot con t?tulos y dem?s.
+#install.packages("ggplot2")
+library(ggplot2)
+##############################################################
+###   Leer los datos (cada caso y los de ambos casos)      ###
+##############################################################
+# Lea los datos de cada distribución por grupo de artefactos para ks test.
+datosMSGB <- read_excel("CR-Score.xlsx", sheet = 3)
+datosMSGBU <- read_excel("CR-Score.xlsx", sheet = 4)
+datosMSGUC <- read_excel("CR-Score.xlsx", sheet = 5)
+datosPSB <- read_excel("CR-Score.xlsx", sheet = 7)
+datosPSBU <- read_excel("CR-Score.xlsx", sheet = 8)
+datosPSUC <- read_excel("CR-Score.xlsx", sheet = 9)
+datosBothB <- read_excel("CR-Score.xlsx", sheet = 11)
+datosBothBU <- read_excel("CR-Score.xlsx", sheet = 12)
+datosBothUC <- read_excel("CR-Score.xlsx", sheet = 13)
+# Lea los datos para el caso de estudio FMSG.
+datosFMSG <- read_excel("CR-Score.xlsx", sheet = 2)
+# Lea los datos para el caso de estudio PdV.
+datosPdV <- read_excel("CR-Score.xlsx", sheet = 6)
+# Lea los datos para ambos casos de estudio.
+datosBoth <- read_excel("CR-Score.xlsx", sheet = 10)
+###############################################################
+###   Mostrar una porcion aleatoria de cada conjunto de datos.#
+###############################################################
+# Show first a random sample of each data set.
+set.seed(1234)
+# Show some data
+dplyr::sample_n(datosFMSG, 10)
+# Show some data
+dplyr::sample_n(datosPdV, 10)
+# Show some data
+dplyr::sample_n(datosBoth, 10)
+###############################################################
+###   Organice los niveles de los datos.                    ###
+###############################################################
+#Asigne los niveles a la columna que los tiene (en este caso ArtifactsSet) - datos FMSG
+datosFMSG$ArtifactsSet <- ordered(datosFMSG$ArtifactsSet, levels(factor(datosFMSG$ArtifactsSet)))
+#show the levels
+levels(datosFMSG$ArtifactsSet)
+#Asigne los niveles a la columna que los tiene (en este caso ArtifactsSet) - datos PdV
+datosPdV$ArtifactsSet <- ordered(datosPdV$ArtifactsSet, levels(factor(datosPdV$ArtifactsSet)))
+#show the levels
+levels(datosPdV$ArtifactsSet)
+#Asigne los niveles a la columna que los tiene (en este caso ArtifactsSet) - datos Both
+datosBoth$ArtifactsSet <- ordered(datosBoth$ArtifactsSet, levels(factor(datosBoth$ArtifactsSet)))
+#show the levels
+levels(datosBoth$ArtifactsSet)
+###############################################################
+###   Dibuje los boxplot de cada conjunto de datos.        ###
+###############################################################
+#Dibuje el boxplot de FMSG (Diagrama de cajas)
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq1-m3-msg.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bMSG)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq1-m3-msg.png", width = 1800, height = 1200, units = "px",
+res = 200)
+#Exp?rtelo al tipo de archivo preparado
+print(bMSG)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq1-m3-msg.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bMSG)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq1-m3-msg.png", width = 1800, height = 1200, units = "px",
+res = 200)
+#Exp?rtelo al tipo de archivo preparado
+print(bMSG)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+#  scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq1-m3-msg.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bMSG)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq1-m3-msg.png", width = 1800, height = 1200, units = "px",
+res = 200)
+#Exp?rtelo al tipo de archivo preparado
+print(bMSG)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+#  scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq1-m3-msg.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bMSG)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq1-m3-msg.png", width = 1800, height = 1200, units = "px",
+res = 200)
+#Exp?rtelo al tipo de archivo preparado
+print(bMSG)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+scale_x_discrete(expand=c(0.4,0)) +
+#  xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+# geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+# scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+bMSG
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+# geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+geom_boxplot() +
+# scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+bMSG
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+# geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+geom_boxplot() +
+scale_x_discrete(expand=c(0.4,0)) +
+# xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+bMSG
+#Exportar la imagen a eps - prepare el archivo.
+setEPS()
+postscript("rq1-m3-msg.eps", onefile=FALSE, height=6, width=8, pointsize=10)
+print(bMSG)
+dev.off()
+#Exportar la imagen a png - prepare el archivo.
+png(filename = "rq1-m3-msg.png", width = 1800, height = 1200, units = "px",
+res = 200)
+#Exp?rtelo al tipo de archivo preparado
+print(bMSG)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+# geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+geom_boxplot(position = "dodge") +
+scale_x_discrete(expand=c(0.4,0)) +
+# xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+#Dibuje el boxplot de FMSG (Diagrama de cajas)
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+# geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+geom_boxplot(position = "dodge") +
+# scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+# geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+geom_boxplot(position = "dodge") +
+# scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black"),
+plot.margin = unit(c(1,6,1,6), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+# geom_boxplot(outlier.shape = 19, width = 0.4, position = "dodge") +
+geom_boxplot(position = "dodge") +
+# scale_x_discrete(expand=c(0.4,0)) +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(1,6,1,6), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(1,6,1,6), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+#  xlim("MSG-B", "MSG-BU","MSG-UC")+
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(1,6,1,6), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(1,6,1,6), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")+
+coord_flip()
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(1,6,1,6), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")+
+coord_flip(expand = TRUE)
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2.5))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(6,1,6,1), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")+
+coord_flip(expand = TRUE)
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2.5))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(6,1,6,1), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")+
+coord_flip(expand = TRUE)
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(6,1,6,1), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")+
+coord_flip(expand = TRUE)
+pdf("rq1-m3-msg.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+theme(axis.text.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(6,1,6,1), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")+
+coord_flip(expand = TRUE)
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg-horizontal.pdf")
+print(bMSG)
+dev.off()
+bMSG = ggplot(datosFMSG, aes(ArtifactsSet,AvgScore)) +
+geom_boxplot() +
+theme(axis.title.x = element_text(face="bold", hjust=0.5, size=rel(2))) +
+theme(axis.title.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+theme(axis.text.x = element_text(face="bold", angle = 90, hjust=0.5,
+size=rel(2))) +
+theme(axis.text.y = element_text(face="bold", vjust=0.5, size=rel(2))) +
+labs(x = "Artifacts set", y= "Average Score") +
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+theme(plot.margin = unit(c(1,6,1,6), "cm")) +
+stat_summary(fun.y=mean, geom="point", shape=18,
+size=3, color="red")+
+#  coord_flip(expand = TRUE)
+#Exportar la imagen a pdf - prepare el archivo
+pdf("rq1-m3-msg-Vertical-labelToo.pdf")
+print(bMSG)
+dev.off()

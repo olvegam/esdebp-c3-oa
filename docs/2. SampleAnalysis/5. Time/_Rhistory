@@ -1,0 +1,39 @@
+abline(linModel, col = "red", lwd = 3)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+install.packages("effsize")
+#Dibuje el boxplot con datos de FMSG y PS (Diagrama de cajas)
+bMSG = ggplot(datosMSG, aes(ArtifactsSet,Time)) + geom_boxplot(outlier.shape = 19, width = 0.3) +
+labs(x = "Artifacts set", y= "Answering time") +
+theme (plot.title = element_text(vjust=2, hjust=0.5, lineheight=1.5, size = 20))  +
+theme(axis.title.x = element_text(face="bold", vjust=-1.5, size=rel(2))) +
+theme(axis.title.y = element_text(face="bold", vjust=1.5, size=rel(2.5))) +
+#  theme(axis.text.x = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+#  theme(axis.text.y = element_text(face="bold", vjust=1.5, size=rel(1.5))) +
+# theme(axis.text=element_text(size=12), axis.title=element_text(size=14,face="bold"))
+theme(panel.background = element_rect(fill = "white", colour = "black")) +
+stat_summary(fun.y=mean, geom="point", shape=18, size=3, color="red")
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+install.packages("effsize")
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+?element_text
+?hjust
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+install.packages("effsize")
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+?horizontal
+ggplot()
+?ggplot()
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)
+source('~/proys/0-olvegamphd/1. Research/Experiments/exdebp-exp/SA/5. Time/CR-bp-S-SW-AoV-Time.R', echo=TRUE)

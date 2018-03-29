@@ -1,0 +1,303 @@
+Statistical data for number of subjects with correct answers (Score 4 or 5) 
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGB$Subjects
+D = 0.5054, p-value = 0.007254
+alternative hypothesis: two-sided
+
+Summary MSG-B
+ ArtifactsSet          Subjects    
+ Length:11          Min.   : 1.00  
+ Class :character   1st Qu.: 6.00  
+ Mode  :character   Median :11.00  
+                    Mean   :10.64  
+                    3rd Qu.:14.50  
+                    Max.   :20.00  
+
+Summary MSG-BU
+ ArtifactsSet          Subjects    
+ Length:11          Min.   : 2.00  
+ Class :character   1st Qu.: 5.50  
+ Mode  :character   Median :10.00  
+                    Mean   :10.36  
+                    3rd Qu.:14.00  
+                    Max.   :20.00  
+
+Summary MSG-UC
+ ArtifactsSet          Subjects     
+ Length:11          Min.   : 2.000  
+ Class :character   1st Qu.: 5.000  
+ Mode  :character   Median : 9.000  
+                    Mean   : 9.455  
+                    3rd Qu.:12.000  
+                    Max.   :20.000  
+
+
+Summary PS-BV
+ ArtifactsSet          Subjects    
+ Length:11          Min.   : 6.00  
+ Class :character   1st Qu.:10.00  
+ Mode  :character   Median :12.00  
+                    Mean   :12.45  
+                    3rd Qu.:15.50  
+                    Max.   :19.00  
+
+
+Summary PS-BU
+ ArtifactsSet          Subjects   
+ Length:11          Min.   : 8.0  
+ Class :character   1st Qu.: 9.5  
+ Mode  :character   Median :12.0  
+                    Mean   :12.0  
+                    3rd Qu.:14.0  
+                    Max.   :17.0  
+
+
+Summary PS-UC
+ ArtifactsSet          Subjects    
+ Length:11          Min.   : 3.00  
+ Class :character   1st Qu.: 7.00  
+ Mode  :character   Median :11.00  
+                    Mean   :11.09  
+                    3rd Qu.:15.50  
+                    Max.   :19.00  
+
+
+Summary Both-BU
+ ArtifactsSet          Subjects    
+ Length:22          Min.   : 2.00  
+ Class :character   1st Qu.: 8.25  
+ Mode  :character   Median :11.00  
+                    Mean   :11.18  
+                    3rd Qu.:14.00  
+                    Max.   :20.00  
+
+
+Summary Both-UC
+ ArtifactsSet          Subjects    
+ Length:22          Min.   : 2.00  
+ Class :character   1st Qu.: 6.25  
+ Mode  :character   Median :10.00  
+                    Mean   :10.27  
+                    3rd Qu.:13.75  
+                    Max.   :20.00  
+
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGBU$Subjects
+D = 0.53564, p-value = 0.003629
+alternative hypothesis: two-sided
+
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGUC$Subjects
+D = 0.54522, p-value = 0.002889
+alternative hypothesis: two-sided
+
+KS test for PS-B
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSB$Subjects
+D = 0.5, p-value = 0.008174
+alternative hypothesis: two-sided
+
+
+
+KS test for PS-BU
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSBU$Subjects
+D = 0.45576, p-value = 0.02072
+alternative hypothesis: two-sided
+
+
+
+KS test for PS-UC
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSUC$Subjects
+D = 0.6566, p-value = 0.000152
+alternative hypothesis: two-sided
+
+
+
+KS test for Both-B
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothB$Subjects
+D = 0.5461, p-value = 4.002e-06
+alternative hypothesis: two-sided
+
+
+
+Summary Both-B
+ ArtifactsSet          Subjects    
+ Length:22          Min.   : 1.00  
+ Class :character   1st Qu.: 7.75  
+ Mode  :character   Median :11.50  
+                    Mean   :11.55  
+                    3rd Qu.:14.75  
+                    Max.   :20.00  
+
+
+KS test for Both-BU
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothBU$Subjects
+D = 0.72494, p-value = 1.814e-10
+alternative hypothesis: two-sided
+
+
+
+KS test for Both-UC
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosBothUC$Subjects
+D = 0.74998, p-value = 3.572e-11
+alternative hypothesis: two-sided
+
+
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGB$Subjects
+W = 0.97075, p-value = 0.894
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGBU$Subjects
+W = 0.93447, p-value = 0.4578
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGUC$Subjects
+W = 0.93959, p-value = 0.5157
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSB$Subjects
+W = 0.95667, p-value = 0.7296
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSBU$Subjects
+W = 0.94704, p-value = 0.6064
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSUC$Subjects
+W = 0.95741, p-value = 0.739
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothB$Subjects
+W = 0.97932, p-value = 0.905
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothBU$Subjects
+W = 0.97946, p-value = 0.9073
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothUC$Subjects
+W = 0.9498, p-value = 0.313
+
+Anova Test FMSG
+             Df Sum Sq Mean Sq F value Pr(>F)
+ArtifactsSet  2    8.4    4.21   0.119  0.888
+Residuals    30 1061.8   35.39               
+
+Anova Test PdV
+             Df Sum Sq Mean Sq F value Pr(>F)
+ArtifactsSet  2   10.6   5.303   0.285  0.754
+Residuals    30  557.6  18.588               
+
+Anova Test Both
+             Df Sum Sq Mean Sq F value Pr(>F)
+ArtifactsSet  2   18.9   9.455   0.357  0.701
+Residuals    63 1667.1  26.462               
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$Subjects and datosMSGBU$Subjects
+W = 64, p-value = 0.8434
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGBU$Subjects and datosMSGUC$Subjects
+W = 65.5, p-value = 0.767
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$Subjects and datosMSGUC$Subjects
+W = 70.5, p-value = 0.5315
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$Subjects and datosPSBU$Subjects
+W = 64, p-value = 0.8433
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSBU$Subjects and datosPSUC$Subjects
+W = 67.5, p-value = 0.6684
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$Subjects and datosPSUC$Subjects
+W = 70, p-value = 0.5527
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$Subjects and datosBothBU$Subjects
+W = 256.5, p-value = 0.7419
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothBU$Subjects and datosBothUC$Subjects
+W = 269.5, p-value = 0.5255
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$Subjects and datosBothUC$Subjects
+W = 281, p-value = 0.3649
+alternative hypothesis: true location shift is not equal to 0
+

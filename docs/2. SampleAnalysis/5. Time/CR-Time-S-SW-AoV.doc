@@ -1,0 +1,135 @@
+statistical analysis for response time of correct answers (Score = 4y5) ArtifactsSet            Time        
+ Length:117         Min.   :  4.902  
+ Class :character   1st Qu.: 50.852  
+ Mode  :character   Median : 99.210  
+                    Mean   :142.347  
+                    3rd Qu.:180.307  
+                    Max.   :698.264  
+ ArtifactsSet            Time        
+ Length:114         Min.   :  0.397  
+ Class :character   1st Qu.: 42.051  
+ Mode  :character   Median : 81.694  
+                    Mean   :114.245  
+                    3rd Qu.:131.148  
+                    Max.   :665.128  
+ ArtifactsSet            Time       
+ Length:104         Min.   : 10.48  
+ Class :character   1st Qu.: 55.05  
+ Mode  :character   Median : 99.39  
+                    Mean   :160.01  
+                    3rd Qu.:186.59  
+                    Max.   :947.12  
+ ArtifactsSet            Time        
+ Length:137         Min.   :  7.115  
+ Class :character   1st Qu.: 43.139  
+ Mode  :character   Median : 84.650  
+                    Mean   :101.066  
+                    3rd Qu.:138.404  
+                    Max.   :437.277  
+ ArtifactsSet            Time       
+ Length:132         Min.   : 16.18  
+ Class :character   1st Qu.: 73.23  
+ Mode  :character   Median :123.59  
+                    Mean   :138.27  
+                    3rd Qu.:177.08  
+                    Max.   :414.05  
+ ArtifactsSet            Time       
+ Length:122         Min.   : 13.67  
+ Class :character   1st Qu.: 72.08  
+ Mode  :character   Median :128.28  
+                    Mean   :153.24  
+                    3rd Qu.:195.59  
+                    Max.   :609.75  
+ ArtifactsSet            Time        
+ Length:254         Min.   :  4.902  
+ Class :character   1st Qu.: 45.059  
+ Mode  :character   Median : 88.986  
+                    Mean   :120.081  
+                    3rd Qu.:150.952  
+                    Max.   :698.264  
+ ArtifactsSet            Time        
+ Length:246         Min.   :  0.397  
+ Class :character   1st Qu.: 56.298  
+ Mode  :character   Median :101.058  
+                    Mean   :127.137  
+                    3rd Qu.:162.280  
+                    Max.   :665.128  
+ ArtifactsSet            Time       
+ Length:226         Min.   : 10.48  
+ Class :character   1st Qu.: 68.24  
+ Mode  :character   Median :115.22  
+                    Mean   :156.35  
+                    3rd Qu.:193.35  
+                    Max.   :947.12  
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGB$Time
+W = 0.75311, p-value = 9.619e-13
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGBU$Time
+W = 0.7937, p-value = 2.355e-11
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGUC$Time
+W = 0.70398, p-value = 3.522e-13
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSB$Time
+W = 0.86044, p-value = 4.847e-10
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSBU$Time
+W = 0.90608, p-value = 1.381e-07
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSUC$Time
+W = 0.84044, p-value = 3.726e-10
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothB$Time
+W = 0.75313, p-value < 2.2e-16
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothBU$Time
+W = 0.8647, p-value = 6.466e-14
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothUC$Time
+W = 0.74676, p-value < 2.2e-16
+
+Anova Test MSG
+              Df  Sum Sq Mean Sq F value Pr(>F)  
+ArtifactsSet   2  116899   58449   2.697 0.0689 .
+Residuals    332 7196351   21676                 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova Test PS
+              Df  Sum Sq Mean Sq F value  Pr(>F)    
+ArtifactsSet   2  189604   94802   11.18 1.9e-05 ***
+Residuals    388 3289231    8477                    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+Anova Test Both
+              Df   Sum Sq Mean Sq F value  Pr(>F)   
+ArtifactsSet   2   173696   86848   5.906 0.00286 **
+Residuals    723 10631003   14704                   
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1

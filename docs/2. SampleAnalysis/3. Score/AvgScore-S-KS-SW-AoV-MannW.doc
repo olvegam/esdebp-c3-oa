@@ -1,0 +1,248 @@
+Statistical data for average score of the 11 requirements comprehension questions
+
+Summary MSG-B
+ ArtifactsSet          AvgScore    
+ Length:20          Min.   :2.455  
+ Class :character   1st Qu.:3.068  
+ Mode  :character   Median :3.455  
+                    Mean   :3.405  
+                    3rd Qu.:3.659  
+                    Max.   :4.364  
+
+
+Summary MSG-BU
+ ArtifactsSet          AvgScore    
+ Length:20          Min.   :2.455  
+ Class :character   1st Qu.:3.000  
+ Mode  :character   Median :3.182  
+                    Mean   :3.350  
+                    3rd Qu.:3.727  
+                    Max.   :4.455  
+
+
+Summary MSG-UC
+ ArtifactsSet          AvgScore    
+ Length:20          Min.   :2.364  
+ Class :character   1st Qu.:2.909  
+ Mode  :character   Median :3.227  
+                    Mean   :3.227  
+                    3rd Qu.:3.455  
+                    Max.   :4.364  
+
+
+Summary PS-BV
+ ArtifactsSet          AvgScore    
+ Length:20          Min.   :2.727  
+ Class :character   1st Qu.:3.500  
+ Mode  :character   Median :3.727  
+                    Mean   :3.795  
+                    3rd Qu.:4.159  
+                    Max.   :4.909  
+
+
+Summary PS-UC
+ ArtifactsSet          AvgScore    
+ Length:20          Min.   :2.182  
+ Class :character   1st Qu.:3.000  
+ Mode  :character   Median :3.591  
+                    Mean   :3.473  
+                    3rd Qu.:4.023  
+                    Max.   :4.545  
+
+
+KS test for MSG-B
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGB$AvgScore
+D = 0.47492, p-value = 0.0002415
+alternative hypothesis: two-sided
+
+
+
+KS test for MSG-BU
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGBU$AvgScore
+D = 0.4096, p-value = 0.002435
+alternative hypothesis: two-sided
+
+
+
+KS test for MSG-UC
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosMSGUC$AvgScore
+D = 0.42749, p-value = 0.001338
+alternative hypothesis: two-sided
+
+
+
+KS test for PS-B
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSB$AvgScore
+D = 0.45936, p-value = 0.0004319
+alternative hypothesis: two-sided
+
+
+
+KS test for PS-BU
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSBU$AvgScore
+D = 0.47664, p-value = 0.0002261
+alternative hypothesis: two-sided
+
+
+
+Summary PS-BU
+ ArtifactsSet          AvgScore    
+ Length:20          Min.   :2.091  
+ Class :character   1st Qu.:3.386  
+ Mode  :character   Median :3.773  
+                    Mean   :3.632  
+                    3rd Qu.:4.091  
+                    Max.   :4.727  
+
+
+KS test for PS-UC
+
+	One-sample Kolmogorov-Smirnov test
+
+data:  datosPSUC$AvgScore
+D = 0.45576, p-value = 0.0004927
+alternative hypothesis: two-sided
+
+
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGB$AvgScore
+W = 0.9778, p-value = 0.9027
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGBU$AvgScore
+W = 0.95143, p-value = 0.3893
+
+
+	Shapiro-Wilk normality test
+
+data:  datosMSGUC$AvgScore
+W = 0.95823, p-value = 0.5091
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSB$AvgScore
+W = 0.98088, p-value = 0.945
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSBU$AvgScore
+W = 0.92175, p-value = 0.1071
+
+
+	Shapiro-Wilk normality test
+
+data:  datosPSUC$AvgScore
+W = 0.96662, p-value = 0.6825
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothB$AvgScore
+W = 0.98427, p-value = 0.8412
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothBU$AvgScore
+W = 0.98371, p-value = 0.823
+
+
+	Shapiro-Wilk normality test
+
+data:  datosBothUC$AvgScore
+W = 0.98118, p-value = 0.7333
+
+             Df Sum Sq Mean Sq F value Pr(>F)
+ArtifactsSet  2   0.33  0.1649   0.629  0.537
+Residuals    57  14.93  0.2619               
+             Df Sum Sq Mean Sq F value Pr(>F)
+ArtifactsSet  2  1.042  0.5208   1.282  0.285
+Residuals    57 23.156  0.4062               
+              Df Sum Sq Mean Sq F value Pr(>F)
+ArtifactsSet   2   1.26  0.6284   1.793  0.171
+Residuals    117  41.01  0.3505               
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$AvgScore and datosMSGBU$AvgScore
+W = 217, p-value = 0.6547
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGBU$AvgScore and datosMSGUC$AvgScore
+W = 233.5, p-value = 0.3707
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosMSGB$AvgScore and datosMSGUC$AvgScore
+W = 249, p-value = 0.1882
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$AvgScore and datosPSBU$AvgScore
+W = 217.5, p-value = 0.6451
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSBU$AvgScore and datosPSUC$AvgScore
+W = 228, p-value = 0.4563
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosPSB$AvgScore and datosPSUC$AvgScore
+W = 248.5, p-value = 0.1932
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$AvgScore and datosBothBU$AvgScore
+W = 863.5, p-value = 0.5438
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothBU$AvgScore and datosBothUC$AvgScore
+W = 923.5, p-value = 0.236
+alternative hypothesis: true location shift is not equal to 0
+
+
+	Wilcoxon rank sum test with continuity correction
+
+data:  datosBothB$AvgScore and datosBothUC$AvgScore
+W = 992.5, p-value = 0.06426
+alternative hypothesis: true location shift is not equal to 0
+
