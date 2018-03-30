@@ -342,3 +342,11 @@ table tr td
   display:none; 
   margin-top: -10px;
 }
+
+.tableImg {
+  margin-left: -5px;
+}
+
+.tableImg td {
+  background-color: white;
+}
