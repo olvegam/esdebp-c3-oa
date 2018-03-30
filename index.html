@@ -3,7 +3,7 @@
 <html>
 
 <head>
-    <title>Automatically Assessing Code Understandability: How Far Are We?</title>
+    <title>Requirements comprehension using BPMN: An Empirical Study.</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
 
@@ -18,15 +18,13 @@
             <div id="content">
                 <div id="logo_text">
                     <!-- class="logo_colour", allows you to change the colour of the text -->
-                    <h1>Automatically Assessing Code Understandability: How Far Are We?</h1>
+                    <h1>Requirements comprehension using BPMN: An Empirical Study</h1>
                     <h2>Experimental material and raw data</h2>
                     <br/>
-                    <h2>Simone Scalabrino<sup>1</sup>, Gabriele Bavota<sup>2</sup>, Christopher Vendome<sup>3</sup>,<br/> Mario Linares-V&aacute;squez<sup>4</sup>, Denys Poshyvanyk<sup>3</sup>, Rocco Oliveto<sup>1</sup></span></h2>
+                    <h2>Olga-Lucero Vega-M&aacute;rquez<sup>1</sup><sup>2</sup>, Jaime Chavarriaga<sup>1</sup>, Mario Linares-V&aacute;squez<sup>1</sup>,<br/> Mario S&aacute;nchez<sup>1</sup></span></h2>
 
-                    <h3><sup>1</sup> University of Molise, Pesche (IS), Italy</h3>
-                    <h3><sup>2</sup> Universit&agrave; della Svizzera Italiana (USI), Lugano, Switzerland</h3>
-                    <h3><sup>3</sup> The College of William and Mary, Williamsburg, Virginia (USA)</h3>
-                    <h3><sup>4</sup> Universidad de los Andes, Bogotá, Colombia</h3>
+                    <h3><sup>1</sup> Universidad de los Andes, Bogotá D.C., Colombia</h3>
+                    <h3><sup>2</sup> Universidad de los Llanos, Villavicencio (Meta), Colombia</h3>
                 </div>
             </div>
             <!-- <div id="menubar">
@@ -40,142 +38,149 @@
                 <!-- insert the page content here -->
                 <h1>Abstract</h1>
                 <p>
-                    Program understanding plays a pivotal role in software maintenance and evolution: a deep understanding of code is the stepping stone for most software-related activities, such as bug fixing or testing.
-                    Being able to measure the <i>understandability</i> of a piece of code might help in estimating the effort required for a maintenance activity, in comparing the quality of alternative implementations, or even in predicting bugs. Unfortunately, there are no existing metrics specifically designed to assess the understandability of a given code snippet.
+                    The Business Process Model and Notation (BPMN) has become the defacto standard for process modeling. 
+                    Currently, BPMN models can be (i) analyzed or simulated using specialized tools, (ii) executed using Business Process Management Systems (BPMS), or (iii) used for requirements’ elicitation. 
+                    Although there are many studies comparing BPMN to other modeling techniques for analyzing and executing processes, there are few showing the suitability of BPMN models as a source for requirements’ comprehension in projects where process-aware software is built without using BPMSs. 
+                    This chapter presents a study aimed at comparing the comprehension of software requirements regarding a business process when they are specified using BPMN or using traditional techniques such as use cases. 
+                    In our study, we analyzed responses of 120 undergraduate and graduate students regarding the requirements’ comprehension achieved when using only BPMN models, use cases, or both. 
+                    The results do not show significant impact of the artifacts on the comprehension level. However, when the understanding of the requirement involves sequence of activities, using the BPMN shows better results.
+                </p>
+                <!--
+                    <p>
+                        <a href="https://www.slideshare.net/sscalabrino/automatically-assessing-code-understandability-how-far-are-we">Presentation at ASE 2017</a>
+                    </p>
+                -->
+                <h1>Case Studies</h1>
+                <p>
+                    We used two case studies in our experiment, a Loan Application in the MSG Foundation, and a Point of Sale. 
+                    For each one, following you find two pdf files with the case study description and the use case specification. 
+                    Next you find the images of the use case diagram and the BPMN model. 
+                    At the end you find a link for downloading these files and their sources 
+                    (.docx for the documents, .mdj for UML diagram, and .bpm for the BPMN model).   
+                    <h2>MSG Foundation loan application</h2>
+                    This case study is about applying to the MSG Foundation for a loan to buy a house.
+                    <br>
+                    <br>
+                    <h3>Description</h3>
+                        <ul>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-StudyCase.pdf">MSG-StudyCase.</a></li>
+                        </ul>
+                    <h3>BPMN model</h3>
+                        <div style="text-align: center">
+                            <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png">
+                                <img src="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png" 
+                                style="width: 90%; margin-top: 12px; margin-bottom: 12px; border: 1px solid black; " /></a>
+                        </div>
+                    <h3>MSG UML use case diagram</h3>
+                        <div style="text-align: center">
+                            <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseDiagram.png">
+                                <img src="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseDiagram.png" 
+                                    style="width: 90%; margin-top: 12px; margin-bottom: 12px; border: 1px solid black; " /></a>
+                        </div>
+                    <h3>Questionnaire</h3>
+                        <ul>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-Questionnaire.docx">MSG-StudyCase.</a></li>
+                        </ul>
+                    <h3>MSG - All files (Source included)</h3>
+                        <ul>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-StudyCase.docx">MSG-StudyCase</a></li>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseSpecification.pdf">MSG-UseCaseSpecification</a></li>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png">MSG-bpmnModel</a></li>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-BPMN.bpm">MSG-BPMN</a></li>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-Template.docx">MSG-UCS-Template</a></li>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-umlDiagram.mdj">MSG-UCS-umlDiagram</a></li>
+                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-Questionnaire.docx">MSG-Questionnaire</a></li>
+                        </ul>
 
-                    In this paper we perform a first step in this direction, by studying the extent to which several types of metrics computed on code, documentation and developers correlate with code understandability. To perform such an investigation we ran a study with 46 participants who were asked to understand eight code snippets each. We collected a total of 324 evaluations aiming at assessing the perceived understandability, the actual level of understanding and the time needed to understand a code snippet. 
-
-                    Our results demonstrate that none of the (existing and new) metrics we considered is able to capture code understandability, not even the ones assumed to assess quality attributes strongly related with it, such as code readability and complexity.
+                    De aquí en adelante se despliega el caso de estudio de Punto de Venta. 
                 </p>
                 <p>
-                    <a href="https://www.slideshare.net/sscalabrino/automatically-assessing-code-understandability-how-far-are-we">Presentation at ASE 2017</a>
-                </p>
-                <h1>Dataset</h1>
-                <p>
-                    This dataset contains 50 methods from 10 open source projects, namely:
-                    <ul>
-                        <li><a target="_blank" href="https://github.com/alkacon/opencms-core/tree/6dfbbb0c9fa27fd6abe53214cde737d66b78d360">OpenCMS</a></li>
-                        <li><a target="_blank" href="https://github.com/jenkinsci/jenkins/tree/f8b26a3bab7cc361664ec3c52de7f955626d63ee">Jenkins</a></li>
-                        <li><a target="_blank" href="https://github.com/spring-projects/spring-batch/tree/4012f8d25178dcef3cfe21d218b80cf52c1ba8d2">Spring Framework</a></li>
-                        <li><a target="_blank" href="https://github.com/hibernate/hibernate-orm/tree/b9ddc063cd720b33d13581ceffdc9b6a0850a5cb">Hibernate ORM</a></li>
-                        <li><a target="_blank" href="https://github.com/bnjmn/weka/tree/ee380afff49fe840b31d6d659be117f54029d040">Weka</a></li>
-                        <li><a target="_blank" href="https://github.com/antlr/antlr4/tree/628aa8ff02a1d2cff673ce28ca3da6114112eba8">ANTLR 4</a></li>
-                        <li><a target="_blank" href="https://github.com/apache/phoenix/tree/41d6349bd50de1ef13a52a8b146c01b504e60aeb">Apache Phoenix</a></li>
-                        <li><a target="_blank" href="https://github.com/mtotschnig/MyExpenses/tree/28738e8399921b3511176281261551931c5aede0">MyExpenses</a></li>
-                        <li><a target="_blank" href="https://github.com/k9mail/k-9/tree/0387b253ba934504f975c46d6a23b575f6bc245b">K-9 Mail</a></li>
-                        <li><a target="_blank" href="https://bitbucket.org/frigus02/car-report/commits/3d95bde502088f87b2955e2b249446a16e0493e8">Car report</a></li>
-                    </ul>
+                    Espacio para la documentación del punto de venta. 
 
-                    We asked 46 software developers to (i) read the methods and (ii) state if they understood the method. If they said they understood the method, they had to answer 3 verification questions. We collected the evaluations through a web application. The participants were able to:
-                    <ul>
-                        <li>read the method (with syntax highlighting)</li>
-                        <li>answer the questions</li>
-                        <li>browse classes referred by the method they had to evaluate.</li>
-                    </ul>
-                    Besides measuring the number of correct answers, we also register the number of seconds needed to understand each method. The figure below shows the main evaluation page, which contains (1) the method and (2) links to related classes. The participants could answer "I understood" or "I did not understand" (3).
-                </p>
+                   <h3>PS - All files (source included)</h3>
+                   <ul>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-bpmnModel.png">PointOfSale-bpmnModel</a></li>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-Questionnaire.docx">PointOfSale-Questionnaire</a></li>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-StudyCase.pdf">PointOfSale-StudyCase</a></li>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-UseCaseSpecification.pdf">PointOfSale-UseCaseSpecification</a></li>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-BPMN.bpm">PS-BPMN</a></li>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-CdE.docx">PS-CdE</a></li>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-UCS-Diagrama.mdj">PS-UCS-Diagrama</a></li>
+                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-UCS-Formato.docx">PS-UCS-Formato</a></li>
+                   </ul>
 
-                <div style="text-align: center">
-                    <a href="img/img.png"><img src="img/img.png" style="width: 90%; margin-top: 12px; margin-bottom: 12px; border: 1px solid black;" /></a>
-                </div>
-
-
-                <p>
-                    The participants answered "I understood the method" in 228 of the evaluations (70%). The mean time needed to understand a method is 154 seconds, while the median is 72 seconds. The figure below shows the estimated distribution of the time needed to answer.
-                </p>
-
-                <div style="text-align: center">
-                    <a href="img/img.png"><img src="img/img.png" style="width: 45%; margin-top: 12px; margin-bottom: 12px; " /></a>
-                </div>
-                
-                <p>
-                    We correlated 121 metrics to four proxies of understandability. As a first step, for each pair of metrics exhibiting a strong correlation (i.e., with a Kendall’s |&tau;| &ge; 0.7), we excluded the ones which presented the highest number of missing values or, if equals, one at random. We reduced the number of investigated metrics from 121 to 74. Click <a href="files/excluded_metrics.txt">here</a> to view the list of excluded metrics (and the correlation with the included metric).
                 </p>
                 
                 <h1>Raw data</h1>
                 <p>
-                	<label>StudyCases</label>
-                    <ul>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png">MSG-bpmnModel</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-Questionnaire.docx">MSG-Questionnaire</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-StudyCase.pdf">MSG-StudyCase</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseSpecification.pdf">MSG-UseCaseSpecification</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-BPMN.bpm">MSG-BPMN</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-StudyCase.docx">MSG-StudyCase</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-Template.docx">MSG-UCS-Template</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-umlDiagram.mdj">MSG-UCS-umlDiagram</a>. Info</li>
+                    Aquí se colocan las imágenes de los gráficos realizados (se despliegan los png, agrupados por RQ1-M1, RQ1-M2, ..., RQ2-M2)
+                    
+                    <br>
 
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-bpmnModel.png">PointOfSale-bpmnModel</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-Questionnaire.docx">PointOfSale-Questionnaire</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-StudyCase.pdf">PointOfSale-StudyCase</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-UseCaseSpecification.pdf">PointOfSale-UseCaseSpecification</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-BPMN.bpm">PS-BPMN</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-CdE.docx">PS-CdE</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-UCS-Diagrama.mdj">PS-UCS-Diagrama</a>. Info</li>
-                        <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-UCS-Formato.docx">PS-UCS-Formato</a>. Info</li>
-                    </ul>
-
+                    Enseguida va la lista de los descargables de dichas imágenes, en los formatos disponibles. 
+                </p>
+                <p>
                     <label>SampleAnalysis</label>
                     <ul>
-                    	<li><a href="docs/2.SampleAnalysis/Tables-for-chapter.xlsx">Tables-for-chapter</a>. Info</li>
+                    	<li><a href="docs/2.SampleAnalysis/Tables-for-chapter.xlsx">Tables-for-chapter</a></li>
 
-                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/Tables-for-chapter.xlsx">Tables-for-chapter</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/BarChart/ea-freq-msg.png">ea-freq-msg.png</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/BarChart/ea-freq-msg-ps.docx">ea-freq-msg-ps</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/BarChart/ea-freq-ps.png">ea-freq-ps</a>. Info</li>
+                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/Tables-for-chapter.xlsx">Tables-for-chapter</a></li>
+                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/BarChart/ea-freq-msg.png">ea-freq-msg.png</a></li>
+                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/BarChart/ea-freq-msg-ps.docx">ea-freq-msg-ps</a></li>
+                        <li><a href="docs/2.SampleAnalysis/0.ExploratoryAnalysis/BarChart/ea-freq-ps.png">ea-freq-ps</a></li>
 
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/_RData.gz">_RData</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/_Rhistory">_Rhistory</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/CR-BP-S-SW-MannW-numCA.R">CR-BP-S-SW-MannW-numCA</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/nCAsc4y5-S-SW-MannW.doc">nCAsc4y5-S-SW-MannW</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/numCAsc4y5.xlsx">numCAsc4y5</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-both.eps">rq1-m1-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-both.pdf">rq1-m1-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-both.png">rq1-m1-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-msg.eps">rq1-m1-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-msg.pdf">rq1-m1-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-msg.png">rq1-m1-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-ps.eps">rq1-m1-ps</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-ps.pdf">rq1-m1-ps</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-ps.png">rq1-m1-ps</a>. Info</li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/_RData.gz">_RData</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/_Rhistory">_Rhistory</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/CR-BP-S-SW-MannW-numCA.R">CR-BP-S-SW-MannW-numCA</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/nCAsc4y5-S-SW-MannW.doc">nCAsc4y5-S-SW-MannW</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/numCAsc4y5.xlsx">numCAsc4y5</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-both.eps">rq1-m1-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-both.pdf">rq1-m1-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-both.png">rq1-m1-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-msg.eps">rq1-m1-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-msg.pdf">rq1-m1-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-msg.png">rq1-m1-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-ps.eps">rq1-m1-ps</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-ps.pdf">rq1-m1-ps</a></li>
+                        <li><a href="docs/2.SampleAnalysis/1.NumberOfCorrectAnswers4y5/rq1-m1-ps.png">rq1-m1-ps</a></li>
 
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/_RData.gz">_RData</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/_Rhistory">_Rhistory</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/CR-bp-S-SW-AnoVA-MannW-Subj.R">CR-bp-S-SW-AnoVA-MannW-Subj</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/CR-Subjects.xlsx">CR-Subjects</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/datosMSGB-plot.pdf">datosMSGB-plot</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/nSubj-S-KS-AoV.doc">nSubj-S-KS-AoV</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/nSubj-S-KS-SW-AoV-MannW.doc">nSubj-S-KS-SW-AoV-MannW</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/README.txt">README</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-both.eps">rq1-m2-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-both.pdf">rq1-m2-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-both.png">rq1-m2-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-msg.eps">rq1-m2-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-msg.pdf">rq1-m2-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-msg.png">rq1-m2-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-ps.eps">rq1-m2-ps</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-ps.pdf">rq1-m2-ps</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-ps.png">rq1-m2-ps</a>. Info</li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/_RData.gz">_RData</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/_Rhistory">_Rhistory</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/CR-bp-S-SW-AnoVA-MannW-Subj.R">CR-bp-S-SW-AnoVA-MannW-Subj</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/CR-Subjects.xlsx">CR-Subjects</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/datosMSGB-plot.pdf">datosMSGB-plot</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/nSubj-S-KS-AoV.doc">nSubj-S-KS-AoV</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/nSubj-S-KS-SW-AoV-MannW.doc">nSubj-S-KS-SW-AoV-MannW</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/README.txt">README</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-both.eps">rq1-m2-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-both.pdf">rq1-m2-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-both.png">rq1-m2-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-msg.eps">rq1-m2-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-msg.pdf">rq1-m2-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-msg.png">rq1-m2-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-ps.eps">rq1-m2-ps</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-ps.pdf">rq1-m2-ps</a></li>
+                        <li><a href="docs/2.SampleAnalysis/2.Subjects/ThirdAn/rq1-m2-ps.png">rq1-m2-ps</a></li>
 
-                        <li><a href="docs/2.SampleAnalysis/3.Score/_RData.gz">_RData</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/_Rhistory">_Rhistory</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/AvgScore-S-KS-SW-AoV-MannW.doc">AvgScore-S-KS-SW-AoV-MannW</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/CR-BP-S-AoV-KS-Score.R">CR-BP-S-AoV-KS-Score</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/CR-Score.xlsx">CR-Score</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-both.eps">rq1-m3-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-both.pdf">rq1-m3-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-both.png">rq1-m3-both</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-con-Xlim.pdf">rq1-m3-msg-con-Xlim</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-delgado.pdf">rq1-m3-msg-delgado</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-delgado-horizontal.pdf">rq1-m3-msg-delgado-horizontal</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg.eps">rq1-m1-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg.pdf">rq1-m1-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg.png">rq1-m1-msg</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-horizontal.pdf">rq1-m3-msg-horizontal</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-Vertical-labelToo.pdf">rq1-m3-msg-Vertical-labelToo</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-ps.eps">rq1-m1-ps</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-ps.pdf">rq1-m1-ps</a>. Info</li>
-                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-ps.png">rq1-m1-ps</a>. Info</li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/_RData.gz">_RData</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/_Rhistory">_Rhistory</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/AvgScore-S-KS-SW-AoV-MannW.doc">AvgScore-S-KS-SW-AoV-MannW</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/CR-BP-S-AoV-KS-Score.R">CR-BP-S-AoV-KS-Score</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/CR-Score.xlsx">CR-Score</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-both.eps">rq1-m3-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-both.pdf">rq1-m3-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-both.png">rq1-m3-both</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-con-Xlim.pdf">rq1-m3-msg-con-Xlim</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-delgado.pdf">rq1-m3-msg-delgado</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-delgado-horizontal.pdf">rq1-m3-msg-delgado-horizontal</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg.eps">rq1-m1-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg.pdf">rq1-m1-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg.png">rq1-m1-msg</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-horizontal.pdf">rq1-m3-msg-horizontal</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-msg-Vertical-labelToo.pdf">rq1-m3-msg-Vertical-labelToo</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-ps.eps">rq1-m1-ps</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-ps.pdf">rq1-m1-ps</a></li>
+                        <li><a href="docs/2.SampleAnalysis/3.Score/rq1-m3-ps.png">rq1-m1-ps</a></li>
                     </ul>
                 </p>
             </div>
