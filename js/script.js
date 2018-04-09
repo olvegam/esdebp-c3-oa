@@ -5,6 +5,7 @@ function verMas() {
 	for (var i=0; i<completText.length; i++) {
 		completText[i].style.display = 'block';
 	}
+	document.getElementByClassName("listCond").style.display = 'block';
 }
 
 function verMenos() {
@@ -14,4 +15,5 @@ function verMenos() {
 	for (var i=0; i<completText.length; i++) {
 		completText[i].style.display = 'none';
 	}
+	document.getElementByClassName("listCond").style.display = 'none';
 }
