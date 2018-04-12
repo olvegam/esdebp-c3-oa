@@ -6,7 +6,9 @@
     <title>Requirements comprehension using BPMN: An Empirical Study.</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" type="text/css" href="css/style.css" title="style" />
-
+<!--    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
     <style>
 
     </style>
@@ -68,63 +70,106 @@
                             valor de la casa, a bajo costo, sin cuota inicial, con cuotas fijas y con 
                             subsidio para las cuotas que la pareja no alcance a cubrir. La Fundación 
                             otorga este crédito si se cumplen las siguientes condiciones:
-                            <ul class = "listCond">
-                                <li>Es un matrimonio entre 1 y 10 años</li>
-                                <li>La Fundación tiene fondos para comprar la casa.  </li>
-                            </ul>
-                            <p class="completText">
-                                Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                                Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        	</p>
-                        	<p class="completText">
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        		Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos... Más parrafos...
-                        	</p>
+                            <div class="completText">
+                                <ul>
+                                    <li>Es un matrimonio entre 1 y 10 años.</li>
+                                    <li>La pareja demuestra que ambos están empleados de tiempo completo 
+                                        desde hace por lo menos un año. </li>
+                                    <li>El precio de la vivienda es inferior al precio promedio de 
+                                        los últimos 12 meses de las casas en el área.</li>
+                                    <li>El valor de la cuota excede el 28% de los ingresos de la pareja 
+                                        (La cuota se calcula con capital de 90% del valor de la casa, 
+                                        tasa fija y plazo de 30 años).</li>
+                                    <li>Los ahorros de la pareja son inferiores al 10% del valor de la casa.</li>
+                                    <li>La Fundación tiene fondos para comprar la casa.  </li>
+                                </ul>
+                                <p>
+                                    Una solicitud de crédito debe estar acompañada de los soportes respectivos.
+                                    Si hay inconsistencias o errores, se informa a la pareja para que subsane 
+                                    la situación, en un plazo no mayor a 15 días calendario. Cumplido este plazo 
+                                    sin recibir los ajustes, la solicitud es eliminada. Si los soportes son válidos, 
+                                    el analista de crédito envía al comité de crédito y posteriormente registra el 
+                                    resultado de la evaluación, el cual es informado a la pareja. Si el crédito es 
+                                    aprobado, también se informan las instrucciones de legalización y posterior 
+                                    desembolso al vendedor del inmueble. El valor aprobado se descuenta del valor 
+                                    disponible en la Fundación para compra de vivienda
+                            	</p>
+                            	<p>
+                                    La Fundación determina si tiene fondos para aprobar un crédito de la 
+                                    siguiente forma: Divide en 12 los ingresos estimados de sus inversiones 
+                                    (los recursos no utilizados para financiar vivienda se invierten), le 
+                                    resta el estimado anual de gastos de sostenimiento dividido en 12, le 
+                                    suma el estimado de pagos por cuotas que recibirá este mes, y le resta 
+                                    el estimado de los subsidios que otorgará este mes. El saldo es 
+                                    distribuido entre las solicitudes de crédito que cumplen los demás 
+                                    requisitos. Con el dinero no utilizado en compra de viviendas se hacen 
+                                    inversiones redimibles en un mes.  
+                                </p>
+                                <p>
+                                    Si una solicitud es aprobada, se establece la cuota fija compuesta de 
+                                    abono a capital y a intereses. Mensualmente, al momento del pago, la 
+                                    pareja presenta sus soportes de ingresos del mes anterior y el máximo 
+                                    pago que realiza es del 28% de éstos. Si la cuota es mayor, la Fundación 
+                                    asume el resto como subsidio. De esta manera, el valor que paga la pareja 
+                                    mensualmente puede variar, dependiendo de sus ingresos. Si la pareja paga 
+                                    menos de lo informado, el faltante se constituye en mora y un área 
+                                    especializada hace el cobro. Este valor también se de los ingresos a la 
+                                    Fundación por concepto de pago de cuotas.
+                                </p>
+                                <p>
+                                    La junta directiva de la Fundación ha contratado una firma para el desarrollo 
+                                    del software que soporte los procesos descritos. Una de las principales 
+                                    necesidades de la fundación es contar con un cálculo automático de 
+                                    cuántos fondos hay disponibles cada mes para la financiación de viviendas.
+                                </p>
+                            </div>
                         </p>
                         <div style="margin-top: -20px" align="right">
                         	<a id="verMas" onclick="verMas();">Ver más</a>
                         	<a id="verMenos" onclick="verMenos();">Ver menos</a>
                         </div>
-                        <ul>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-StudyCase.pdf">MSG-StudyCase.</a></li>
-                        </ul>
+<!--
+                            <i class="glyphicon glyphicon-save-file"></i>
+-->
+                        The document can be downloaded in <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-StudyCase.pdf">MSG-StudyCase.pdf</a> 
                     <h3>BPMN model</h3>
                         <div style="text-align: center">
                             <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png">
                                 <img src="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png" 
                                 style="width: 90%; margin-top: 12px; margin-bottom: 12px; border: 1px solid black; " /></a>
                         </div>
-                    <h3>MSG UML use case diagram</h3>
+                        This BPMN model can be downloaded as
+                        <ul>
+                            <li>Image in <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png">MSG-bpmnModel.png</a></li>
+                            <li>Bizagi model (.bpm)  in <a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-BPMN.bpm">MSG-BPMN.bpm</a></li>
+                        </ul>
+                    <h3>UML use case diagram</h3>
                         <div style="text-align: center">
                             <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseDiagram.png">
                                 <img src="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseDiagram.png" 
                                     style="width: 90%; margin-top: 12px; margin-bottom: 12px; border: 1px solid black; " /></a>
                         </div>
+                        This UML diagram can be downloaded as
+                        <ul>
+                            <li>Image in <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseDiagram.png">MSG-UCS-umlDiagram.png</a></li>
+                            <li>StartUML diagram (.mdj) in <a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-umlDiagram.mdj">MSG-UCS-umlDiagram.mdj</a></li>
+                        </ul>
+                    <h3>Use case specification</h3>
+                        It can be downloaded as
+                        <ul>
+                            <li>Pdf in <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseSpecification.pdf">MSG-UseCaseSpecification.pdf</a></li>
+                            <li>Doc in <a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-Template.docx">MSG-UCS-Template.docx</a></li>
+                        </ul>
                     <h3>Questionnaire</h3>
-                        <ul>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-Questionnaire.docx">MSG-StudyCase.</a></li>
-                        </ul>
-                    <h3>MSG - All files (Source included)</h3>
-                        <ul>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-StudyCase.docx">MSG-StudyCase</a></li>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-UseCaseSpecification.pdf">MSG-UseCaseSpecification</a></li>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-bpmnModel.png">MSG-bpmnModel</a></li>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-BPMN.bpm">MSG-BPMN</a></li>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-Template.docx">MSG-UCS-Template</a></li>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/SourceFiles/MSG-UCS-umlDiagram.mdj">MSG-UCS-umlDiagram</a></li>
-                            <li><a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-Questionnaire.docx">MSG-Questionnaire</a></li>
-                        </ul>
+                        <p>You can download a document in 
+                         <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-Questionnaire.docx">MSG-Questionnaire.docx</a>
+                        </p>
+                <h2>Point of Sale</h2>
+                        <p>
+                        
+                        De aquí en adelante se despliega el caso de estudio de Punto de Venta. 
 
-                    De aquí en adelante se despliega el caso de estudio de Punto de Venta. 
-                </p>
+                    </p>                        
                 <p>
                     Espacio para la documentación del punto de venta. 
 
