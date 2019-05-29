@@ -83,7 +83,7 @@
                                     <li>Los ahorros de la pareja son inferiores al 10% del valor de la casa.</li>
                                     <li>La Fundación tiene fondos para comprar la casa.  </li>
                                 </ul>
-                                <p>
+                                 <p>
                                     Una solicitud de crédito debe estar acompañada de los soportes respectivos.
                                     Si hay inconsistencias o errores, se informa a la pareja para que subsane 
                                     la situación, en un plazo no mayor a 15 días calendario. Cumplido este plazo 
@@ -165,16 +165,117 @@
                          <a href="docs/1.StudyCases/Schach-MSGFoundation/MSG-Questionnaire.docx">MSG-Questionnaire.docx</a>
                         </p>
                 <h2>Point of Sale</h2>
-                        <p>
-                        
-                        De aquí en adelante se despliega el caso de estudio de Punto de Venta. 
-
+                    <p>
+                        This case study is about paying for a purchase at a supermarket 
+                        point of sale, where products are registered with their prices 
+                        and quantities, payment is received, and products are delivered 
+                        to the customer 
                     </p>                        
-                <p>
-                    Espacio para la documentación del punto de venta. 
+                   <h3>Description (in Spanish) </h3>
+                    <p>Un sistema de Punto de Venta - PdV generalmente se usa 
+                        para administrar las ventas en supermercados. Incluye 
+                        componentes de hardware como una computadora, un escáner de 
+                        código de barras, una impresora y un software para realizar 
+                        su función más básica que es registrar las ventas y apoyar la 
+                        administración de la tienda. 
+                        <div class="completText">
+                            <p>
+                                Las ventas
 
-                    OJO! Hay que agregar los artefactos de los casos de estudio NO utilizados. 
+                                Un cliente llega a una caja con bienes para comprar, el
+                                cajero iniciará una nueva transacción de venta. Cuando el código 
+                                barras de un bien es leído por el sistema PdV, recuperará el 
+                                nombre y el precio de este bien del sistema de Catálogo e 
+                                interactuará con el sistema de inventario para deducir el monto 
+                                de stock de este bien. Cuando finaliza la transacción de venta, 
+                                el cliente puede pagar en efectivo o con tarjeta de crédito. 
+                                Después de que el pago sea confirmado, se imprimirá un recibo. 
+                                Para la promoción de la tienda, ésta con frecuencia emite cupones                             de regalo. El cliente puede usar los cupones para obtener un 
+                                mejor precio al comprar bienes. Otra función de un sistema PdV es
+                                manejar devoluciones. 
+                            </p>
+                            <p>
+                                Los pagos y devoluciones 
 
+                                Hay dos modos de manejar los pagos: en efectivo o con 
+                                tarjeta de crédito. Si es con efectivo, el cajero 
+                                ingresa el monto recibido y el sistema presenta el 
+                                valor a devolver y abre el cajón de efectivo. El cajero 
+                                deposita dinero en efectivo y entrega las vueltas al 
+                                cliente. Enseguida, el sistema registra el pago en 
+                                efectivo. Por otro lado, si el cliente decide pagar con
+                                tarjeta de crédito, el cajero le pide al cliente que 
+                                ingrese su información. El cliente ingresa la
+                                información de su cuenta de crédito y luego el sistema
+                                envía la solicitud de autorización de pago a un sistema 
+                                externo de servicio de autorización de pagos y solicita 
+                                la aprobación del pago. A continuación, el sistema 
+                                registra el pago con tarjeta de crédito, incluyendo 
+                                la aprobación del pago. El cajero solicita al cliente 
+                                su firma de pago en el comprobante para completar la venta.
+                            </p>
+                            <p>
+                                    Cupones de regalo
+                                Usar cupones de regalo es otra funcionalidad 
+                                disponible con el sistema PdV. Si el cliente 
+                                tiene un cupón de regalo, entonces es elegible 
+                                para un descuento (por ejemplo, de empleado, 
+                                cliente preferido, titular del cupón). El cajero 
+                                envía una solicitud de descuento e ingresa la 
+                                identificación del cliente, luego el sistema 
+                                presenta un total de descuento basado en las 
+                                reglas de descuento. 
+                            </p>
+                            <p>
+                                Opción de ayuda
+                                Si el cajero necesita ayuda mientras ingresa 
+                                la información o para el procesamiento de una 
+                                venta, él puede usar el sistema para obtener 
+                                ayuda. Esto incluye toda la información y 
+                                las pautas para procesar la venta.
+                            </p>
+                        </div>
+                    </p>
+                    <div style="margin-top: -20px" align="right">
+                       	<a id="verMas" onclick="verMas();">Ver más</a>
+                       	<a id="verMenos" onclick="verMenos();">Ver menos</a>
+                    </div>
+<!--                <p>
+        <p>
+-->
+                    The document can be downloaded in <a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-StudyCase.pdf">PointOfSale-StudyCase</a> 
+                    <h3>BPMN model</h3>
+                        <div style="text-align: center">
+                            <a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-bpmnModel.png">
+                                <img src="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-bpmnModel.png" 
+                                style="width: 90%; margin-top: 12px; margin-bottom: 12px; border: 1px solid black; " /></a>
+                        </div>
+                        This BPMN model can be downloaded as
+                        <ul>
+                            <li>Image in <a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-bpmnModel.png">PointOfSale-bpmnModel.png</a></li>
+                            <li>Bizagi model (.bpm)  in <a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-BPMN.bpm">PS-BPMN.bpm</a></li>
+                        </ul>
+                    <h3>UML use case diagram</h3>
+                        <div style="text-align: center">
+                            <a href="docs/1.StudyCases/Schach-MSGFoundation/PS-UseCaseDiagram.png">
+                                <img src="docs/1.StudyCases/Tiwari-PointOfSale/PS-UseCaseDiagram.png" 
+                                    style="width: 90%; margin-top: 12px; margin-bottom: 12px; border: 1px solid black; " /></a>
+                        </div>
+                        This UML diagram can be downloaded as
+                        <ul>
+                            <li>Image in <a href="docs/1.StudyCases/Tiwari-PointOfSale/PS-UseCaseDiagram.png">PS-UCS-umlDiagram.png</a></li>
+                            <li>StartUML diagram (.mdj) in <a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-UCS-umlDiagram.mdj">MSG-UCS-umlDiagram.mdj</a></li>
+                        </ul>
+                    <h3>Use case specification</h3>
+                        It can be downloaded as
+                        <ul>
+                            <li>Pdf in <a href="docs/1.StudyCases/Tiwari-PointOfSale/PS-UseCaseSpecification.pdf">PS-UseCaseSpecification.pdf</a></li>
+                            <li>Doc in <a href="docs/1.StudyCases/Tiwari-PointOfSale/SourceFiles/PS-UCS-Template.docx">PS-UCS-Template.docx</a></li>
+                        </ul>
+                    <h3>Questionnaire</h3>
+                        <p>You can download a document in 
+                         <a href="docs/1.StudyCases/Tiwari-PointOfSale/PS-Questionnaire.docx">PS-Questionnaire.docx</a>
+                        </p>
                    <h3>PS - All files (source included)</h3>
                    <ul>
                         <li><a href="docs/1.StudyCases/Tiwari-PointOfSale/PointOfSale-bpmnModel.png">PointOfSale-bpmnModel</a></li>
@@ -190,13 +291,6 @@
                 </p>
                 
                 <h1>Raw data</h1>
-                <p>
-                    Aquí se colocan las imágenes de los gráficos realizados (se despliegan los png, agrupados por RQ1-M1, RQ1-M2, ..., RQ2-M2)
-                    
-                    <br>
-
-                    Enseguida va la lista de los descargables de dichas imágenes, en los formatos disponibles. 
-                </p>
                 <p>
                     <label>SampleAnalysis</label>
                     <table class="tableImg" width="100%" cellspacing="5" cellpadding="5">
