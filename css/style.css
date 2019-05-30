@@ -326,19 +326,19 @@ table tr td
   border-top: 1px solid #FFF;}
 
 
-#verMas {
+#verMas1, #verMas2 {
   display:block;
   cursor:pointer;
   color:blue;
 }
 
-#verMenos {
+#verMenos1, #verMenos2 {
   display:none;
   cursor:pointer;
   color:blue;
 }
 
-.completText {
+.completText1, .completText2 {
   display:none; 
   margin-top: -10px;
 }
